@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tạo món ăn</title>
+        <link rel="stylesheet" href="./font-awesome-6.5.1-pro-full/css/all.css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- link swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    </head>
+    <body class="bg-amber-50">
+        <!-- Header -->
+        <header class="fixed top-0 z-50 w-full bg-orange-600 shadow-lg flex justify-between items-center h-16 px-10">
+            <a href="./index.html" class="flex gap-2 items-center text-3xl font-bold text-white">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Nhà Hàng <span class="text-yellow-300">MindX</span></p>
+            </a>
+            <nav class="flex gap-6 items-center text-white text-lg">
+                <a href="./index.html" class="hover:text-yellow-300 transition"> <i class="fa-solid fa-home mr-2"></i>Trang chủ </a>
+                <a href="./manage-food.html" class="hover:text-yellow-300 transition"> <i class="fa-solid fa-clipboard-list mr-2"></i>Quản lý món ăn </a>
+            </nav>
+        </header>
+        <!-- Main -->
+        <div class="py-20 max-w-7xl mx-auto min-h-screen space-y-5">
+            <div class="flex gap-5">
+                <div class="flex-1 space-y-5">
+                    <div class="">
+                        <label for="" class="label block">Nhập tên món ăn</label>
+                        <input type="text" class="input" id="food-name" placeholder="Nhập tên món ăn" />
+                    </div>
+                    <div class="">
+                        <label for="" class="label block">Nhập mô tả món ăn</label>
+                        <input type="text" class="input" id="food-description" placeholder="Nhập mô tả món ăn" />
+                    </div>
+                    <div class="">
+                        <label for="" class="label block">Nhập link hình ảnh món ăn</label>
+                        <input type="text" class="input" id="food-image" placeholder="Nhập link hình ảnh món ăn" />
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="" alt="" id="image-preview" class="w-full h-80 object-cover" />
+                </div>
+            </div>
+
+            <button class="btn btn-primary" id="btn-create-food">Tạo món ăn</button>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-orange-900 text-white py-5 px-6">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Nhà Hàng MindX. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="../js/create-food.js"></script>
+    </body>
+</html>
