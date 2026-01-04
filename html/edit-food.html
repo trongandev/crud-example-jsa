@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nhà Hàng MindX - Thưởng Thức Món Ngon</title>
+        <title>Sửa món ăn</title>
         <link rel="stylesheet" href="./font-awesome-6.5.1-pro-full/css/all.css" />
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -26,23 +26,32 @@
             </nav>
         </header>
         <!-- Main -->
-        <div class="py-20 max-w-7xl mx-auto min-h-screen flex justify-center items-center">
-            <div class="flex justify-center items-center gap-10">
+        <div class="py-20 max-w-7xl mx-auto min-h-screen space-y-5">
+            <div class="flex gap-5">
                 <div class="flex-1 space-y-5">
-                    <a href="../index.html" class="block">
-                        <button class="btn btn-primary">Quay về</button>
-                    </a>
-                    <h1 class="text-2xl font-medium" id="food-name">Bún Chả Hà Nội</h1>
-                    <p class="text-gray-600" id="food-description">
-                        Bún chả là món ăn làm nên tên tuổi ẩm thực Hà Nội. Điểm nhấn của món ăn là những miếng chả thịt lợn băm và chả miếng nướng vàng ruộm trên than hoa, thơm lừng. Chả được đặt
-                        trong bát nước chấm chua ngọt pha vừa vặn, kèm theo đu đủ xanh ngâm giòn. Khi ăn, thực khách gắp bún tươi, chả và rau sống đủ loại nhúng vào bát nước chấm, tạo nên hương vị
-                        bùng nổ.
-                    </p>
+                    <div class="">
+                        <label for="" class="label block">Nhập tên món ăn</label>
+                        <input type="text" class="input" id="food-name" placeholder="Nhập tên món ăn" />
+                    </div>
+                    <div class="">
+                        <label for="" class="label block">Nhập mô tả món ăn</label>
+                        <input type="text" class="input" id="food-description" placeholder="Nhập mô tả món ăn" />
+                    </div>
+                    <div class="">
+                        <label for="" class="label block">Nhập link hình ảnh món ăn</label>
+                        <input type="text" class="input" id="food-image" placeholder="Nhập link hình ảnh món ăn" />
+                    </div>
                 </div>
                 <div class="flex-1">
-                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1751995139/xho76hhwpnawqu7afiw3.webp" id="food-image" alt="" class="rounded-lg shadow" />
+                    <img
+                        src="https://lh6.googleusercontent.com/proxy/hGHw3T31DYPmZNH_OFECtIfai3XjfqWontkTIzevwngzzAOHrYvHMypUm9G1hdNhxF61aROsC8EiHkIi6ysDWJaHl87IY3g"
+                        alt=""
+                        id="image-preview"
+                        class="w-full h-80 object-cover" />
                 </div>
             </div>
+
+            <button class="btn btn-primary" id="btn-create-food">Cập nhật món ăn</button>
         </div>
         <!-- Footer -->
         <footer class="bg-orange-900 text-white py-5 px-6">
@@ -51,6 +60,6 @@
             </div>
         </footer>
 
-        <script src="../js/render-detail-food.js"></script>
+        <script src="../js/edit-food.js"></script>
     </body>
 </html>
